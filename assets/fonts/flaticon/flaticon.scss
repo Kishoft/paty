@@ -1,0 +1,97 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?d3fcd2a2a38b237f583f28e382a7865d") format("truetype"),
+url("./flaticon.woff?d3fcd2a2a38b237f583f28e382a7865d") format("woff"),
+url("./flaticon.woff2?d3fcd2a2a38b237f583f28e382a7865d") format("woff2"),
+url("./flaticon.eot?d3fcd2a2a38b237f583f28e382a7865d#iefix") format("embedded-opentype"),
+url("./flaticon.svg?d3fcd2a2a38b237f583f28e382a7865d#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "home": "\f101",
+    "air-conditioner": "\f102",
+    "conditioning-air": "\f103",
+    "air-conditioner-1": "\f104",
+    "air-conditioner-2": "\f105",
+    "air-conditioning": "\f106",
+    "air-conditioning-1": "\f107",
+    "air-conditioner-3": "\f108",
+    "air-conditioning-2": "\f109",
+    "air-conditioning-3": "\f10a",
+    "air-conditioning-4": "\f10b",
+    "air-conditioning-5": "\f10c",
+    "air": "\f10d",
+    "air-conditioning-6": "\f10e",
+    "air-conditioning-7": "\f10f",
+    "air-conditioner-4": "\f110",
+    "air-conditioning-8": "\f111",
+    "clean": "\f112",
+);
+
+.flaticon-home:before {
+    content: map-get($flaticon-map, "home");
+}
+.flaticon-air-conditioner:before {
+    content: map-get($flaticon-map, "air-conditioner");
+}
+.flaticon-conditioning-air:before {
+    content: map-get($flaticon-map, "conditioning-air");
+}
+.flaticon-air-conditioner-1:before {
+    content: map-get($flaticon-map, "air-conditioner-1");
+}
+.flaticon-air-conditioner-2:before {
+    content: map-get($flaticon-map, "air-conditioner-2");
+}
+.flaticon-air-conditioning:before {
+    content: map-get($flaticon-map, "air-conditioning");
+}
+.flaticon-air-conditioning-1:before {
+    content: map-get($flaticon-map, "air-conditioning-1");
+}
+.flaticon-air-conditioner-3:before {
+    content: map-get($flaticon-map, "air-conditioner-3");
+}
+.flaticon-air-conditioning-2:before {
+    content: map-get($flaticon-map, "air-conditioning-2");
+}
+.flaticon-air-conditioning-3:before {
+    content: map-get($flaticon-map, "air-conditioning-3");
+}
+.flaticon-air-conditioning-4:before {
+    content: map-get($flaticon-map, "air-conditioning-4");
+}
+.flaticon-air-conditioning-5:before {
+    content: map-get($flaticon-map, "air-conditioning-5");
+}
+.flaticon-air:before {
+    content: map-get($flaticon-map, "air");
+}
+.flaticon-air-conditioning-6:before {
+    content: map-get($flaticon-map, "air-conditioning-6");
+}
+.flaticon-air-conditioning-7:before {
+    content: map-get($flaticon-map, "air-conditioning-7");
+}
+.flaticon-air-conditioner-4:before {
+    content: map-get($flaticon-map, "air-conditioner-4");
+}
+.flaticon-air-conditioning-8:before {
+    content: map-get($flaticon-map, "air-conditioning-8");
+}
+.flaticon-clean:before {
+    content: map-get($flaticon-map, "clean");
+}

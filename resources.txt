@@ -1,0 +1,6 @@
+Home 1 Page: 
+**********
+Image Count: 24
+Icon Count: 6
+Pages: header-21.html - hero-14.html - preloader-7.html - popup-2.html - about-6.html - cta-9.html - taxonomy-2.html - blog-12.html - services-5.html - testimonial-15.html - pricing-6.html - team-20.html - contact-form-5.html - to-top-6.html - footer-5.html
+

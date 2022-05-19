@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?d3fcd2a2a38b237f583f28e382a7865d") format("truetype"),
+url("./flaticon.woff?d3fcd2a2a38b237f583f28e382a7865d") format("woff"),
+url("./flaticon.woff2?d3fcd2a2a38b237f583f28e382a7865d") format("woff2"),
+url("./flaticon.eot?d3fcd2a2a38b237f583f28e382a7865d#iefix") format("embedded-opentype"),
+url("./flaticon.svg?d3fcd2a2a38b237f583f28e382a7865d#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-home:before {
+    content: "\f101";
+}
+.flaticon-air-conditioner:before {
+    content: "\f102";
+}
+.flaticon-conditioning-air:before {
+    content: "\f103";
+}
+.flaticon-air-conditioner-1:before {
+    content: "\f104";
+}
+.flaticon-air-conditioner-2:before {
+    content: "\f105";
+}
+.flaticon-air-conditioning:before {
+    content: "\f106";
+}
+.flaticon-air-conditioning-1:before {
+    content: "\f107";
+}
+.flaticon-air-conditioner-3:before {
+    content: "\f108";
+}
+.flaticon-air-conditioning-2:before {
+    content: "\f109";
+}
+.flaticon-air-conditioning-3:before {
+    content: "\f10a";
+}
+.flaticon-air-conditioning-4:before {
+    content: "\f10b";
+}
+.flaticon-air-conditioning-5:before {
+    content: "\f10c";
+}
+.flaticon-air:before {
+    content: "\f10d";
+}
+.flaticon-air-conditioning-6:before {
+    content: "\f10e";
+}
+.flaticon-air-conditioning-7:before {
+    content: "\f10f";
+}
+.flaticon-air-conditioner-4:before {
+    content: "\f110";
+}
+.flaticon-air-conditioning-8:before {
+    content: "\f111";
+}
+.flaticon-clean:before {
+    content: "\f112";
+}
