@@ -9,7 +9,7 @@
   --thm-hero-font: "Comfortaa", cursive; /* Hero Headings font */
   --thm-hero-color: #ffaa17; /* Hero Headings color */
   --thm-font-display: 70px; /* Hero Heading font size */
-  --thm-base: #fbcc0a; /* Primary color #ffaa17 */
+  --thm-base: #0f9aa8; /* Primary color #ffaa17 */
   --thm-base-hover: #b29106; /* Primary hover #c3810f */
   --thm-base-rgb: 251, 204, 10; /* Primary rgb 255, 170, 23; */
   --thm-base-hue: #ead88d; /* Primary low hue #fffaf2 */
@@ -23595,4 +23595,45 @@ background-color: var(--thm-border);
     margin-left: 0;
   }
 
+}
+
+#section-hero{
+  margin-top: 140px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background: url('../../assets/img/home-1/1920x800.jpg');
+  padding: 20px;
+}
+
+#section-hero::before{
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  background: rgba(0, 0, 0, .7);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#section-hero form {
+  max-width: 600px;
+  z-index: 3;
+  background: rgba(255, 255, 255, .5);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+}
+#section-hero form h4 {
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+#section-hero label, #section-hero span, #section-hero h4 {
+  color: var(--thm-secondary)
+}
+
+#section-hero h2 {
+  color: var(--thm-base);
+  z-index: 3;
 }
