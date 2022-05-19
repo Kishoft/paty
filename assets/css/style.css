@@ -23637,3 +23637,43 @@ background-color: var(--thm-border);
   color: var(--thm-base);
   z-index: 3;
 }
+
+#cookies-not-ok,
+#cookies-ok {
+  display:flex;
+  position:fixed;
+  z-index: 99999;
+  width: 100%;
+  transition: all .5s ease;
+}
+#cookies-not-ok{
+  justify-content: space-evenly;
+  align-items: center;
+  display:flex;
+  background-color: white;
+  padding: 20px;
+  border-top: 2px solid var(--thm-border);
+}
+
+#cookies-ok{
+  width: 100%;
+  background-color: transparent;
+  justify-content: center;
+}
+
+#cookies-ok-button{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+#cookies-not-ok-button{
+  cursor: pointer;
+  color: var(--thm-base);
+  border: 2px solid var(--thm-border);
+  border-bottom: transparent;
+  background-color: white;
+  padding: 5px 10px;
+}
