@@ -23644,14 +23644,16 @@ background-color: var(--thm-border);
   z-index: 99999;
   width: 100%;
   transition: all .5s ease;
+  bottom: -150px;
 }
 #cookies-not-ok{
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   display:flex;
-  background-color: white;
   padding: 20px;
   border-top: 2px solid var(--thm-border);
+  bottom: -150px;
+  background-color: white;
 }
 
 #cookies-ok{
@@ -23666,6 +23668,7 @@ background-color: var(--thm-border);
   color: white;
   padding: 5px 10px;
   border-radius: 5px;
+  margin: 0 10px;
 }
 
 #cookies-not-ok-button{
