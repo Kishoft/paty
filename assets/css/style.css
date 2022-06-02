@@ -1280,12 +1280,12 @@ textarea,
 .form-control {
   position: relative;
   display: block;
-  height: 60px;
+  height: 40px;
   width: 100%;
   font-size: 16px;
   color: #686a6f;
   font-weight: 400;
-  padding: 14px 30px;
+  padding: 5px 20px;
   letter-spacing: 0.1em;
   background-color: var(--thm-form-input-bg);
   border: 1px solid var(--thm-border);
@@ -23621,7 +23621,7 @@ background-color: var(--thm-border);
 #section-hero form {
   max-width: 600px;
   z-index: 3;
-  background: rgba(255, 255, 255, .5);
+  background: rgba(255, 255, 255, .8);
   backdrop-filter: blur(10px);
   padding: 30px;
 }
