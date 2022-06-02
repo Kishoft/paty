@@ -6,7 +6,6 @@ window.addEventListener("load", e => {
 
 	setTimeout(() => {
 
-
 		const switchCookiesOk = document.getElementById('cookies-not-ok-button');
 		const switchCookiesNotOk = document.getElementById('cookies-ok-button');
 		const cookiesOkBar = document.getElementById('cookies-not-ok');

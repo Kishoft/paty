@@ -1,0 +1,64 @@
+:host([open]) {
+    position: fixed;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+
+:host(:not([open])) {
+    position: relative;
+}
+
+.close-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 50px;
+    color: #0f9aa8;
+    transition: all .5s ease;
+    z-index: 99999;
+}
+
+.close-button:hover{
+    color: #1d2451;
+}
+
+.open-button {
+    cursor: pointer;
+    color: #0f9aa8;
+}
+
+:host(:not([open])) .close-button {
+    display: none;
+}
+:host([open]) .open-button{
+    display: none;
+}
+
+.modal-content{
+    width: 95%;
+    height: 95%;
+    background-color: white;
+    border-radius: 5px;
+    overflow: auto;
+    padding: 10px;
+    z-index: 99999;
+}
+
+:host(:not([open])) .modal-content {
+    display: none;
+}

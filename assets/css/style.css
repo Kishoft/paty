@@ -10,7 +10,7 @@
   --thm-hero-color: #ffaa17; /* Hero Headings color */
   --thm-font-display: 70px; /* Hero Heading font size */
   --thm-base: #0f9aa8; /* Primary color #ffaa17 */
-  --thm-base-hover: #b29106; /* Primary hover #c3810f */
+  --thm-base-hover: #1d2451; /* Primary hover #c3810f */
   --thm-base-rgb: 251, 204, 10; /* Primary rgb 255, 170, 23; */
   --thm-base-hue: #ead88d; /* Primary low hue #fffaf2 */
   --thm-secondary: #1d2451; /* Secondary #f50000 */
@@ -23622,7 +23622,6 @@ background-color: var(--thm-border);
   max-width: 600px;
   z-index: 3;
   background: rgba(255, 255, 255, .8);
-  backdrop-filter: blur(10px);
   padding: 30px;
 }
 #section-hero form h4 {
