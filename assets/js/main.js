@@ -286,37 +286,6 @@
   Before / After Slider
   -------------------------------------------------------------------------------*/
 
-  $(window).on('load', function() {
-  if($(".twentytwenty-container").length > 0){
-    $(".twentytwenty-container").twentytwenty({
-      move_slider_on_hover: false,
-      move_with_handle_only: false,
-      click_to_move: true
-    });
-  }
-  });
-
-  $(window).on('load', function() {
-  if($(".twentytwenty-container2").length > 0){
-    $(".twentytwenty-container2").twentytwenty({
-      move_slider_on_hover: false,
-      move_with_handle_only: false,
-      click_to_move: true,
-      orientation: 'vertical'
-    });
-  }
-  });
-
-  $(window).on('load', function() {
-  if($(".twentytwenty-container3").length > 0){
-    $(".twentytwenty-container3").twentytwenty({
-      move_slider_on_hover: true,
-      move_with_handle_only: false,
-      click_to_move: true,
-      orientation: 'vertical'
-    });
-  }
-  });
 
 
   /*-------------------------------------------------------------------------------
@@ -1329,24 +1298,6 @@ $(".sigma_testimonial-slider-15").slick({
 
     // Back to top
     stickBackToTop();
-
-  });
-
-  /*-------------------------------------------------------------------------------
-  on load functions
-  -------------------------------------------------------------------------------*/
-  $(window).on('load', function() {
-
-    // Preloader
-    $('.sigma_preloader').addClass('hidden');
-
-    // Newsletter popup
-    if(!checkCookie('newsletter_popup_viewed')){
-      setTimeout(function(){
-        $("#sigma_popup-newsletter").modal('show');
-        $(".sigma_popup").addClass('show');
-      }, 3000);
-    }
 
   });
 

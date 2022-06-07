@@ -2,8 +2,6 @@
 
 window.addEventListener("load", e => {
 
-	console.log("Cargado");
-
 	setTimeout(() => {
 
 		const switchCookiesOk = document.getElementById('cookies-not-ok-button');
@@ -23,7 +21,6 @@ window.addEventListener("load", e => {
 	
 		switchCookiesOk.addEventListener('click', e => {
 			e.preventDefault();
-			console.log("beep")
 			localStorage.removeItem('cookies-aceptadas');
 			cookiesOkBar.style.bottom = '0px';
 			cookiesNotOkBar.style.bottom = '-150px';

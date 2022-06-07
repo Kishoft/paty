@@ -1,7 +1,7 @@
 class ModalWindow extends HTMLElement {
 
     static get observedAttributes() {
-        return ['open', 'open-button-text'];
+        return ['open', 'open-button-text', 'template-url'];
     }
 
     constructor() {
@@ -14,6 +14,7 @@ class ModalWindow extends HTMLElement {
     }
 
     connectedCallback() {
+
         this.addEventListener('click', e => {
             e.preventDefault();
             if (e.path[0] === this) {
@@ -21,7 +22,7 @@ class ModalWindow extends HTMLElement {
             }
         })
 
-        let slot = document.createElement('slot');
+        let slot  = document.createElement('slot');
 
         let open_button = document.createElement('a');
         open_button.classList.add('open-button');
@@ -35,7 +36,7 @@ class ModalWindow extends HTMLElement {
         modal_content.classList.add('modal-content');
         this.shadowRoot.appendChild(modal_content);
 
-        modal_content.appendChild(slot);
+        modal_content.appendChild(slot)
 
         let close_button = document.createElement('button');
         close_button.classList.add('close-button');
@@ -44,7 +45,14 @@ class ModalWindow extends HTMLElement {
             e.preventDefault();
             this.toggleModal();
         })
+
         this.shadowRoot.append(modal_content, open_button, close_button);
+
+        fetch(`./assets/js/components/templates/${this.getAttribute('template-url')}.html`)
+            .then(response => response.text())
+            .then(template => {
+                this.insertAdjacentHTML('beforeend', template);
+            })
 
     }
     toggleModal() {

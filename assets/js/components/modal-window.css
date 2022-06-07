@@ -1,6 +1,5 @@
 :host([open]) {
     position: fixed;
-    display:flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
@@ -9,6 +8,7 @@
     top: 0;
     left: 0;
     z-index: 9998;
+    display: flex;
 }
 
 :host(:not([open])) {

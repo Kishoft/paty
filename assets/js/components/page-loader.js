@@ -5,21 +5,7 @@ class PageLoader extends HTMLElement {
         super();
         this.attachShadow({ mode: 'open' });
         this.shadowRoot.innerHTML = `
-        <style>
-        @keyframes pulso {
-            0% {
-              transform: scaleY(1);
-            }
-          
-            10% {
-              transform: scaleY(1.1);
-            }
-          
-            100% {
-              transform: scaleY(1);
-            }
-          }
-          
+        <style>          
           :host {
             background-color: var(--thm-base);
             width: 100vw;
@@ -31,15 +17,16 @@ class PageLoader extends HTMLElement {
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: .3s;
+            transition: .5s ease;
+            opacity: 1;
           }
           
           .barra-preloader {
-            width: 100px;
+            width: 50px;
             height: 20vh;
             margin: 20px;
             background: #fff;
-            animation: pulso .9s linear infinite;
+            animation: pulso 1.2s linear infinite;
           }
           
           .barra-preloader:nth-child(1) {
@@ -53,6 +40,19 @@ class PageLoader extends HTMLElement {
           .barra-preloader:nth-child(3) {
             animation-delay: .9s;
           }
+          @keyframes pulso {
+              0% {
+                transform: scaleY(1);
+              }
+            
+              10% {
+                transform: scaleY(1.3);
+              }
+            
+              100% {
+                transform: scaleY(1);
+              }
+            }
         </style>
         `
 
@@ -61,14 +61,16 @@ class PageLoader extends HTMLElement {
             barra.classList.add('barra-preloader')
             this.shadowRoot.appendChild(barra)
         }
-        
-        document.body.style.opacity = 1;
     }
 
     connectedCallback() {
 
         window.addEventListener('load', e => {
+          console.log("loaded")
+          this.style.opacity = 0;
+          setTimeout(() => {
             this.remove()
+          }, 1000)
         })
     }
 }
